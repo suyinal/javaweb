@@ -1,10 +1,10 @@
-ge contentType ="text/html; charset=utf-8" session="true" %>
+<%@ page contentType ="text/html; charset=utf-8" session="true" %>
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Demo App</title>
+		<title>欢迎来到xx影院</title>
 	</head>
-	<body>
+	<body style="background: url(timg.jpg);background-size:100%">
 		<center>
 		<div style="background-color:#ddd;padding:30;width:30%;margin-top:5em">
 			<form action="./login.action" method="post">
@@ -13,6 +13,6 @@ ge contentType ="text/html; charset=utf-8" session="true" %>
 				<input type="submit" value=" 登 录 ">
 			</form>
 		</div>
-		</center>
+		</center> 
 	</body>
 </html>
