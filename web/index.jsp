@@ -1,18 +1,42 @@
-<%@ page contentType ="text/html; charset=utf-8" session="true" %>
+<%@page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>欢迎来到xx影院</title>
-	</head>
-	<body style="background: url(timg.jpg);no-repeat center center fixed; background-size:100% 100%;">
-		<center>
-		<div style="background-color:#484848;padding:5;width:30%;height:15%;margin-top:21em">
-			<form action="login_conf.jsp" method="post">
-				用户： <input type="text" name="user"> <p>
-				密码： <input type="password" name="pass">  <p>
-				<input type="submit" value=" 登 录 ">
-			</form>
-		</div>
-		</center> 
-	</body>
+<head>
+<title>Login Interface</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<!-- -->
+</head>
+<body>
+<!-- contact-form -->	
+<div class="message warning">
+<div class="inset">
+	<div class="login-head">
+		<h1>Welcome to the login interface</h1>
+		 <div class="alert-close"> </div> 			
+	</div>
+		<form action="login_conf.jsp" method="post">
+			<li>
+				<input type="text" class="text" name="user" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}"><a href="#" class=" icon user"></a>
+			</li>
+				<div class="clear"> </div>
+			<li>
+				<input type="password" name="pass" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"> <a href="#" class="icon lock"></a>
+			</li>
+			<div class="clear"> </div>
+			<div class="submit">
+				<input type="submit" onclick="myFunction()" value="Sign in" >
+				<h4><a href="#">Lost your Password ?</a></h4>
+						  <div class="clear">  </div>	
+			</div>
+				
+		</form>
+		</div>					
+	</div>
+	</div>
+	<div class="clear"> </div>
+</body>
 </html>
