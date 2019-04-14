@@ -29,6 +29,7 @@
 			<div class="clear"> </div>
 			<div class="submit">
 				<input type="submit" onclick="myFunction()" value="Sign in" >
+			<a href="regist.jsp">	<input type="submit" onclick="myFunction()" value="Registered" ></a>
 				<h4><a href="#">Lost your Password ?</a></h4>
 						  <div class="clear">  </div>	
 			</div>
