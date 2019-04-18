@@ -16,4 +16,14 @@
         <url-pattern>/login.action</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>RegistServlet</servlet-name>
+        <servlet-class>cn.edu.swu.RegistServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistServlet</servlet-name>
+        <url-pattern>/*/RegistServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
+
 </web-app>
