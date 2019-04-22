@@ -18,13 +18,13 @@
 		<h1>Welcome to the login interface</h1>
 		 <div class="alert-close"> </div> 			
 	</div>
-		<form action="login_conf.jsp" method="post">
+		<form action="../src/cd/edu/swu/login/LoginServlet" method="post">
 			<li>
-				<input type="text" class="text" name="user" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}"><a href="#" class=" icon user"></a>
+				<input type="text" class="text" name="username" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}"><a href="#" class=" icon user"></a>
 			</li>
 				<div class="clear"> </div>
 			<li>
-				<input type="password" name="pass" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"> <a href="#" class="icon lock"></a>
+				<input type="password" name="pwd" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"> <a href="#" class="icon lock"></a>
 			</li>
 			<div class="clear"> </div>
 			<div class="submit">
