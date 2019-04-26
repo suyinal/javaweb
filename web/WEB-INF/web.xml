@@ -8,12 +8,11 @@
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>cn.edu.swu.login.LoginServlet</servlet-class>
-        <load-on-startup>1</load-on-startup>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
-        <url-pattern>/LoginServlet</url-pattern>
+        <url-pattern>/loginServlet</url-pattern>
     </servlet-mapping>
 
     <servlet>

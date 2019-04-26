@@ -18,7 +18,7 @@
 		<h1>Welcome to the login interface</h1>
 		 <div class="alert-close"> </div> 			
 	</div>
-		<form action="../src/cd/edu/swu/login/LoginServlet" method="post">
+		<form action="LoginServlet" method="post">
 			<li>
 				<input type="text" class="text" name="username" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}"><a href="#" class=" icon user"></a>
 			</li>
