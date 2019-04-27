@@ -1,15 +1,14 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+<%@page contentType="text/html;charset=gb2312"%>
 <html>
 <head>
-	<title>登陆</title>
+	<title>��½</title>
 </head>
 <body>
 <center>
-	<h2>登陆成功</h2>
-	<h3>欢迎<font color="red" size="15">
+	<h2>��½�ɹ�</h2>
+	<h3>��ӭ<font color="red" size="15">
 		<%=request.getParameter("username")%>
-	</font>光临！！！</h3>
+	</font>���٣�����</h3>
 </center>
 </body>
 </html>

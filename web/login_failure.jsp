@@ -1,14 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+<%@page contentType="text/html;charset=gb2312"%>
 <html>
 <head>
-	<title>鐧婚檰</title>
+	<title>登陆</title>
 </head>
 <body>
 <center>
-	<h2>鐧婚檰澶辫触</h2>
-	<h3>閿欒鐨勭敤鎴峰悕鍙婂瘑鐮侊紒锛侊紒</h3>
-	<a href="index.jsp">閲嶆柊鐧婚檰</a>
+	<h2>登陆失败</h2>
+	<h3>错误的用户名及密码！！！</h3>
+	<a href="index.jsp">重新登陆</a>
 </center>
 </body>
 </html>

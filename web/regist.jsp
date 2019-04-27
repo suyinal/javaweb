@@ -38,6 +38,7 @@
 	</head>
 	<body>
 				<table width="98%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
+					<form action="RegistServlet" method="post">
 					<tr>
 						<th height="40" colspan="2" bgcolor="#FFFFFF" class="f12b-red" style="font-size: 11px;">
 							用 户 注 册
@@ -49,7 +50,7 @@
 						</td>
 						<td width="80%" bgcolor="#FFFFFF">
 							&nbsp;
-							<input type="text" name="userName" id="userName"/>
+							<input type="text" name="username" id="userName"/>
 						</td>
 					</tr>
 					<tr>
@@ -58,7 +59,7 @@
 						</td>
 						<td bgcolor="#FFFFFF">
 							&nbsp;
-							<input type="password" name="userPw"/>
+							<input type="pwd" name="userPw"/>
 						</td>
 					</tr>
 					<tr>
@@ -67,18 +68,10 @@
 						</td>
 						<td bgcolor="#FFFFFF">
 							&nbsp;
-							<input type="password" name="userPw1"/>
+							<input type="pwd" name="userPw1"/>
 						</td>
 					</tr>
-					<tr>
-						<td height="30" align="right" bgcolor="#F9F9F9" style="font-size: 11px;">
-							真实姓名：
-						</td>
-						<td bgcolor="#FFFFFF">
-							&nbsp;
-							<input type="text" name="userRealname"/>
-						</td>
-					</tr>
+					
 					<tr>
 						<td height="30" align="right" bgcolor="#F9F9F9" style="font-size: 11px;">
 							性别：
@@ -105,11 +98,11 @@
 						</td>
 						<td bgcolor="#FFFFFF">
 							&nbsp;
-							<input type="button" value="确定" onclick="check1();"/>
-							<input type="button" value="取消" onclick="closeOpen()"/>
+							<input type="submit" value="确定" onclick="check1();"/>
+							<input type="submit" value="取消" onclick="closeOpen()"/>
 						</td>
 					</tr>
-				</table>
-			</form>
+				</form>
+			</table>
 	</body>
 </html>    
