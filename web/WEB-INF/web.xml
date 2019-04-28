@@ -29,4 +29,14 @@
     <servlet-name>RegisterServlet</servlet-name>
     <url-pattern>/RegisterServlet</url-pattern>
   </servlet-mapping>
+    <servlet>
+    <description></description>
+    <display-name>ListAllUserServlet</display-name>
+    <servlet-name>ListAllUserServlet</servlet-name>
+    <servlet-class>cn.edu.swu.ListAllUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListAllUserServlet</servlet-name>
+    <url-pattern>/listAllUser</url-pattern>
+  </servlet-mapping>
 </web-app>
