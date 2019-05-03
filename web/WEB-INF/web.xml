@@ -29,7 +29,7 @@
     <servlet-name>RegisterServlet</servlet-name>
     <url-pattern>/RegisterServlet</url-pattern>
   </servlet-mapping>
-    <servlet>
+  <servlet>
     <description></description>
     <display-name>ListAllUserServlet</display-name>
     <servlet-name>ListAllUserServlet</servlet-name>
@@ -48,5 +48,15 @@
   <servlet-mapping>
     <servlet-name>DeleteUserServlet</servlet-name>
     <url-pattern>/deleteUser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>controller</display-name>
+    <servlet-name>controller</servlet-name>
+    <servlet-class>cn.edu.swu.controller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>controller</servlet-name>
+    <url-pattern>/controller</url-pattern>
   </servlet-mapping>
 </web-app>
