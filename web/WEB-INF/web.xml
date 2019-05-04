@@ -59,4 +59,14 @@
     <servlet-name>controller</servlet-name>
     <url-pattern>/controller</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginFilter</display-name>
+    <servlet-name>LoginFilter</servlet-name>
+    <servlet-class>cn.edu.swu.Servlet.LoginFilter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginFilter</servlet-name>
+    <url-pattern>/LoginFilter</url-pattern>
+  </servlet-mapping>
 </web-app>

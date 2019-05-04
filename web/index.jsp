@@ -1,3 +1,4 @@
+<%@page import="cn.edu.swu.domain.User"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html>
@@ -9,21 +10,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <!-- -->
-<%
-    String username = "";
-    String password = "";
-    //获取当前站点的所有Cookie
-    Cookie[] cookies = request.getCookies();
-    for (int i = 0; i < cookies.length; i++) {//对cookies中的数据进行遍历，找到用户名、密码的数据
-        if ("username".equals(cookies[i].getName())) {
-            username = cookies[i].getValue();
-        } else if ("password".equals(cookies[i].getName())) {
-            password = cookies[i].getValue();
-        }
-    }
-%>
 </head>
 <body>
+<%
+Object u=session.getAttribute("user");
+if(u!=null){
+	response.sendRedirect("users.jsp");
+}
+	
+%>
+
 <!-- contact-form -->	
 <div class="message warning">
 <div class="inset">
@@ -39,7 +35,7 @@
 			<li>
 				<input type="password" name="password"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"> <a href="#" class="icon lock"></a>
 			</li>
-			     <input type="checkbox" value="y" name="isLogin">Remember<br/> 
+			     <input type="checkbox" name="autoLogin" value="autoLogin">Remerber
 			<div class="clear"> </div>
 			<div class="submit">
 				<input type="submit" onclick="myFunction()" value="Sign in" >&nbsp;
