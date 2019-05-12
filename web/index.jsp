@@ -15,7 +15,7 @@
 <%
 Object u=session.getAttribute("user");
 if(u!=null){
-	response.sendRedirect("users.jsp");
+	response.sendRedirect("/dingpiao/admin/index.jsp");
 }
 	
 %>
