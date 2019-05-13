@@ -12,19 +12,11 @@
 <!-- -->
 </head>
 <body>
-<%
-Object u=session.getAttribute("user");
-if(u!=null){
-	response.sendRedirect("/dingpiao/admin/index.jsp");
-}
-	
-%>
-
 <!-- contact-form -->	
 <div class="message warning">
 <div class="inset">
 	<div class="login-head">
-		<h1>Welcome to the login interface</h1>
+		<h1>欢迎登陆电影票预定系统</h1>
 		 <div class="alert-close"> </div> 			
 	</div>
 		<form action="LoginServlet" method="post">
@@ -35,11 +27,9 @@ if(u!=null){
 			<li>
 				<input type="password" name="password"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"> <a href="#" class="icon lock"></a>
 			</li>
-			     <input type="checkbox" name="autoLogin" value="autoLogin">Remerber
 			<div class="clear"> </div>
 			<div class="submit">
-				<input type="submit" onclick="myFunction()" value="Sign in" >&nbsp;
-				<h4><a href="regist.jsp">No account?sign up for a</a></h4>				
+				<input type="submit" onclick="myFunction()" value="登陆" >&nbsp;			
 						  <div class="clear">  </div>	
 			</div>
 				
