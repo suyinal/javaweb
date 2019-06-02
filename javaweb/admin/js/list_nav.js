@@ -27,4 +27,4 @@ outlookbar.additem('留言管理',t,'/dingpiao/liuyanMana.action')
 
 
 t=outlookbar.addtitle('退出系统') 
-outlookbar.additem('安全退出',t,'/../web/index.jsp')
+outlookbar.additem('安全退出',t,'/dingpiao/login.jsp')
